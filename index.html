@@ -19,12 +19,12 @@
   <!--  Navbar -->
   <header class="bg-[#0A0A23] fixed top-0 left-0 w-full z-50 shadow-md">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="#" class="text-white text-2xl font-bold">Portfolio</a>
+      <a href="index.html" class="text-white text-2xl font-bold">Portfolio</a>
       <nav class="hidden md:flex space-x-6 text-white text-sm">
         <a href="#about" class="hover:text-purple-400 transition">About</a>
         <a href="#projects" class="hover:text-purple-400 transition">Projects</a>
         <a href="#skills" class="hover:text-purple-400 transition">Skills</a>
-        <a href="#contact" class="hover:text-purple-400 transition">Contact</a>
+        <a href="contactPage.html" class="hover:text-purple-400 transition">Contact</a>
       </nav>
       <button id="menu-btn" class="md:hidden text-white focus:outline-none">
         <i class="fas fa-bars text-xl"></i>
@@ -41,9 +41,9 @@
   <!-- Hero Section -->
   <section class="flex flex-col items-center text-center px-4 pt-[100px]">
     <div class="w-60 h-60 rounded-full overflow-hidden border-4 border-white shadow-lg mb-6">
-      <img src="IMG_6584.jpg" alt="Profile Picture" class="w-full h-full object-cover scale-[1.4]" style="object-position: center 60%;" />
+      <img src="images/IMG_6584.jpg" alt="Profile Picture" class="w-full h-full object-cover scale-[1.4]" style="object-position: center 60%;" />
     </div>
-    <h1 class="text-5xl md:text-6xl font-bold mb-4">Amith Seluka Arvin | Portfolio</h1>
+    <h1 class="text-5xl md:text-6xl font-bold mb-4">Amith Seluka Arvin's Portfolio</h1>
     <p class="text-xl text-gray-400 mb-6">Virginia Tech CS • Software Engineer • Developer</p>
     <a href="projects.html" class="bg-purple-600 px-6 py-3 rounded-full hover:bg-purple-800 transition">View Projects</a>
   </section>
@@ -57,27 +57,73 @@
   </section>
 
 
-    <!-- Projects Section -->
-  <section id="projects" class="px-6 py-20 max-w-6xl mx-auto text-center">
-  <h2 class="text-3xl md:text-4xl font-bold mb-6">📄 Personal Project MYP</h2>
+<!-- Projects Section -->
+<section id="projects" class="px-6 py-20 max-w-6xl mx-auto text-center">
+  <h2 class="text-3xl md:text-4xl font-bold mb-8">Projects - Many more to be added</h2>
 
-  <div class="w-full shadow-lg rounded-lg overflow-hidden border border-gray-700">
-    <iframe
-      src="PersonalProjectMYP.pdf"
-      class="w-full h-[600px] bg-white"
-      style="border: none;"
-      loading="lazy"
-    ></iframe>
-  </div>
+  <!-- Scrollable Project Table -->
+  <div class="overflow-x-auto p-8">
+    <div class="flex flex-wrap gap-6 min-w-max scroll-smooth snap-x snap-mandatory px-1">
 
-  <div class="mt-4">
-    <a
-      href="PersonalProjectMYP.pdf"
-      download
-      class="inline-block mt-4 text-purple-400 hover:text-purple-200 underline transition"
-    >
-      Download PDF 📄
-    </a>
+      <!-- Project Card Template (repeated 5 times) -->
+      <a href="projects.html"
+         class="w-[300px] h-[280px] bg-[#1A1A2E] rounded-xl overflow-hidden cursor-pointer
+                transition-transform duration-300 ease-in-out transform snap-start
+                hover:-translate-y-1 hover:scale-105
+                hover:shadow-[0_10px_25px_rgba(168,85,247,0.5)]
+                hover:border hover:border-purple-500/20 hover:backdrop-blur-sm">
+        <img src="images/AIResumeBuilder.png" alt="Resume Builder"
+             class="w-full h-32 object-cover transition duration-300 ease-in-out">
+        <div class="p-4 text-left">
+          <h3 class="text-lg font-semibold mb-1 text-white">AI Resume Builder</h3>
+          <p class="text-sm text-gray-400">Build resumes using LinkedIn data and AI summaries.</p>
+        </div>
+      </a>
+
+      <a href="projects.html"
+         class="w-[300px] h-[280px] bg-[#1A1A2E] rounded-xl overflow-hidden cursor-pointer
+                transition-transform duration-300 ease-in-out transform snap-start
+                hover:-translate-y-1 hover:scale-105
+                hover:shadow-[0_10px_25px_rgba(168,85,247,0.5)]
+                hover:border hover:border-purple-500/20 hover:backdrop-blur-sm">
+        <img src="images/stockAnalysisTool.png" alt="Stock Analyzer"
+             class="w-full h-32 object-cover transition duration-300 ease-in-out">
+        <div class="p-4 text-left">
+          <h3 class="text-lg font-semibold mb-1 text-white">Stock Analyzer AI/ML</h3>
+          <p class="text-sm text-gray-400">Analyze stocks using machine learning trends.</p>
+        </div>
+      </a>
+
+      <a href="projects.html"
+         class="w-[300px] h-[280px] bg-[#1A1A2E] rounded-xl overflow-hidden cursor-pointer
+                transition-transform duration-300 ease-in-out transform snap-start
+                hover:-translate-y-1 hover:scale-105
+                hover:shadow-[0_10px_25px_rgba(168,85,247,0.5)]
+                hover:border hover:border-purple-500/20 hover:backdrop-blur-sm">
+        <img src="images/Calculator.png" alt="Calculator App"
+             class="w-full h-32 object-cover transition duration-300 ease-in-out">
+        <div class="p-4 text-left">
+          <h3 class="text-lg font-semibold mb-1 text-white">Calculator App</h3>
+          <p class="text-sm text-gray-400">Apple-like calculator app built with Flutter.</p>
+        </div>
+      </a>
+
+      <a href="projects.html"
+         class="w-[300px] h-[280px] bg-[#1A1A2E] rounded-xl overflow-hidden cursor-pointer
+                transition-transform duration-300 ease-in-out transform snap-start
+                hover:-translate-y-1 hover:scale-105
+                hover:shadow-[0_10px_25px_rgba(168,85,247,0.5)]
+                hover:border hover:border-purple-500/20 hover:backdrop-blur-sm">
+        <img src="images/lifestyleWeb.png" alt="Lifestyle Website"
+             class="w-full h-32 object-cover transition duration-300 ease-in-out">
+        <div class="p-4 text-left">
+          <h3 class="text-lg font-semibold mb-1 text-white">Lifestyle Website</h3>
+          <p class="text-sm text-gray-400">Health-focused lifestyle website from MYP project.</p>
+        </div>
+      </a>
+
+
+    </div>
   </div>
 </section>
 
@@ -86,7 +132,10 @@
   <!-- Skills Section -->
   <section id="skills" class="px-6 py-20 max-w-5xl mx-auto text-center">
     <h2 class="text-3xl md:text-4xl font-bold mb-8">Technical Skills</h2>
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-lg text-gray-300">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-lg text-gray-300 transition-transform duration-300 ease-in-out transform snap-start
+                hover:-translate-y-1 hover:scale-105
+                hover:shadow-[0_10px_25px_rgba(168,85,247,0.5)]
+                hover:border hover:border-purple-500/20 hover:backdrop-blur-sm p-4 rounded-lg">
       <span class="inline-block transition-transform duration-200 transform hover:scale-110 hover:text-white hover:font-semibold">Java</span>
       <span class="inline-block transition-transform duration-200 transform hover:scale-110 hover:text-white hover:font-semibold">Python</span>
       <span class="inline-block transition-transform duration-200 transform hover:scale-110 hover:text-white hover:font-semibold">Flutter</span>
