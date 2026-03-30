@@ -58,14 +58,28 @@
 
 
 <!-- Projects Section -->
-<section id="projects" class="px-6 py-20 max-w-6xl mx-auto text-center">
+<section id="projects" class="px-6 py-20 text-center">
   <h2 class="text-3xl md:text-4xl font-bold mb-8">Projects - Many more to be added</h2>
 
   <!-- Scrollable Project Table -->
-  <div class="overflow-x-auto p-8">
-    <div class="flex flex-wrap gap-6 min-w-max scroll-smooth snap-x snap-mandatory px-1">
+  <div class="overflow-x-auto p-8 w-full">
+    <div class="flex gap-6 min-w-max scroll-smooth snap-x snap-mandatory px-6">
 
       <!-- Project Card Template (repeated 5 times) -->
+      <a href="projects.html"
+         class="w-[300px] h-[280px] bg-[#1A1A2E] rounded-xl overflow-hidden cursor-pointer
+                transition-transform duration-300 ease-in-out transform snap-start
+                hover:-translate-y-1 hover:scale-105
+                hover:shadow-[0_10px_25px_rgba(168,85,247,0.5)]
+                hover:border hover:border-purple-500/20 hover:backdrop-blur-sm">
+        <img src="images/houseviol.png" alt="Housing Violation Reporter"
+             class="w-full h-32 object-cover transition duration-300 ease-in-out">
+        <div class="p-4 text-left">
+          <h3 class="text-lg font-semibold mb-1 text-white">AI Housing Violation Reporter</h3>
+          <p class="text-sm text-gray-400">Snap a photo of your housing problem, get a formal complaint letter in seconds.</p>
+        </div>
+      </a>
+
       <a href="projects.html"
          class="w-[300px] h-[280px] bg-[#1A1A2E] rounded-xl overflow-hidden cursor-pointer
                 transition-transform duration-300 ease-in-out transform snap-start
@@ -150,6 +164,12 @@
       <span class="inline-block transition-transform duration-200 transform hover:scale-110 hover:text-white hover:font-semibold">Unity</span>
       <span class="inline-block transition-transform duration-200 transform hover:scale-110 hover:text-white hover:font-semibold">WordPress</span>
       <span class="inline-block transition-transform duration-200 transform hover:scale-110 hover:text-white hover:font-semibold">CAD</span>
+    </div>
+  </section>
+
+  <!-- Extra Space at bottom-->
+  <section>
+    <div class="h-20">
     </div>
   </section>
 
